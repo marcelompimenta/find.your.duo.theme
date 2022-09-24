@@ -1,5 +1,6 @@
 import './styles/main.css'
 import logoImg from './assets/logo-nlw-esports.svg'
+import { MagnifyingGlassPlus } from 'phosphor-react'
 
 const arrayImg = [
   { img: '/game-1.png', ads: 4, title: 'League Of Legends' },
@@ -33,7 +34,20 @@ const App = () => {
                 </div>
               </a>)}
         </div>
-        <div></div>
+        <div className='mt-8 pt-1  bg-gradientText self-stretch rounded-lg overflow-hidden'>
+          <div className='flex justify-between items-center bg-[#2a2634] self-stretch rounded-md px-8 py-6 m-0 '>
+            <div>
+              <strong className='text-2xl font-black text-white block'>Não encontrou o seu duo?</strong>
+              <span className=' text-zinc-400 text-sm '>Publique um anúncio para encontrar novos players.</span>
+            </div>
+            <div className='inline-flex'>
+              <button className=' inline-flex items-center gap-3 py-3 px-4 rounded bg-violet-500 hover:bg-violet-700 text-white'>
+                <MagnifyingGlassPlus size={20} />
+                Publicar anúncio
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )
